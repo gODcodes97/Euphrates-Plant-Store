@@ -269,9 +269,45 @@ main .products .products-div .prod {
 
 /* ..........Footer........ */
 
+footer {
+    background: #fff;
+}
+
+.foot-grid {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.fchild {
+    text-align: left;
+    font-family: "Julius Sans One";
+}
+
+#fchildx {
+    margin-top: 1.5rem;
+}
+
+.fchild p {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.fchild a {
+    display: block;
+    margin-bottom: 1rem;
+    color: rgb(3, 3, 15);
+}
+
+
+
 footer h3 {
     text-align: center;
-    font-family: "Stalemate";
-    font-size: 3rem;
-    background: #f1f3f5;
+    font-family: "Julius Sans One";
+    font-size: 1rem;
+    font-weight: 200;
+    background: inherit;
+    margin-bottom: 1rem;
 }
