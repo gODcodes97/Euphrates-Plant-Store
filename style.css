@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Secular+One&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charmonman&family=Julius+Sans+One&family=Stalemate&display=swap');
+
 
 * {
     margin: 0;
@@ -6,78 +7,271 @@
     box-sizing: border-box;
     outline: none;
     border: none;
-    transition: all .2s linear;
-    text-decoration: none;
+    overflow: auto;
     scroll-behavior: smooth;
-    overflow-x: hidden;
     scroll-padding-top: 7rem;
+
+    text-decoration: none;
 }
 
 .header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100;
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 9%;
-    background-image: linear-gradient(to bottom, #c68642, #d49b5b, #e3b075, #f1c690, #ecdecb);
-
+    padding: 1rem 9%;
+    background-color: #fff;
 }
 
-.logo {
+.header .logo {
     width: 12.5rem;
     height: 12.5rem;
 }
 
-.navbar a {
-    color: rgb(3, 3, 36);
+.header .navbar a {
     font-family: "Julius Sans One";
-    font-size: 1.25rem;
+    color: rgb(3, 3, 15);
     margin: 0 1rem;
+    background: #f1f3f5;
+    width: 7.25rem;
+    line-height: 7.25rem;
+    font-size: 1.25rem;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 0.5rem;
 }
 
-.navbar a:hover {
-    color: green;
+.header .navbar a:hover {
+    color: #f1f3f5;
+    background: rgb(3, 3, 15);
 }
 
 .header .icons div {
-    height: 2.5rem;
+    background: #f1f3f5;
     width: 2.5rem;
     line-height: 2.5rem;
-    background: #eee;
-    border-radius: 50%;
-    text-align: center;
     font-size: 0.75rem;
-    color: green;
-    cursor: pointer;
+    text-align: center;
     margin-left: .25rem;
+    border-radius: 50%;
+    cursor: pointer;
+    color: rgb(3, 3, 15);
 }
 
 .header .icons div:hover {
-    color: #fff;
-    background: rgb(19, 182, 19);
+    color: #f1f3f5;
+    background: rgb(3, 3, 15);
 }
 
-.header .icons div:active {
-    color: #fff;
-    background: rgb(19, 182, 19);
-}
+/* .................About.................  */
 
-#menu-btn {
-    display: none;
-}
-
-main .features {
+main .about {
     position: relative;
     width: 100%;
-    height: 40rem;
-    background-size: contain;
+    background: linear-gradient(rgba(230, 230, 227, 0.993), rgba(145, 231, 133, 0.3)), url(media/about.jpg);
     background-position: center;
+    background-size: cover;
 }
 
-.features-text {
-    position: absolute;
+main .about .about-div {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+main .about .about-div h1 {
+    padding-top: 3.75rem;
+    font-family: "Stalemate";
+    color: #000;
+    font-size: 3.75rem;
+    text-transform: capitalize;
+    word-spacing: 0.25rem;
+    font-weight: 400;
+}
+
+main .about .about-div p {
+    font-family: "Charmonman";
+    padding-top: 1rem;
+    color: #000;
+    font-size: 1.5rem;
+}
+
+main .about .about-div #shop-btn {
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    background: rgba(220, 240, 215, 0.9);
+    cursor: pointer;
+    border-radius: 1rem;
+    font-family: "Charmonman";
+    text-transform: capitalize;
+    font-weight: 200;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+main .about .about-div #shop-btn:hover {
+    background: rgb(3, 3, 15);
+    color: #f1f3f5;
+} 
+
+/* .................Products..................  */
+
+main .products {
+    position: relative;
+    background: linear-gradient(rgba(145, 231, 133, 0.3), rgba(230, 230, 227, 0.993)), url(media/product.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+}
+
+main .products #more-btn {
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    background: rgba(220, 240, 215, 0.9);
+    cursor: pointer;
+    border-radius: 1rem;
+    font-family: "Charmonman";
+    text-transform: capitalize;
+    font-weight: 200;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+main .products #more-btn:hover {
+    background: rgb(3, 3, 15);
+    color: #f1f3f5;
+}
+
+main .products h1 {
+    margin-top: 1rem;
+    text-align: center;
+    font-family: "Charmonman";
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-decoration: underline double;
+}
+
+main .products .products-div {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
+
+main .products .products-div .prod {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 10rem;
+    text-align: center;
+    box-shadow: 0 0.125rem 0.0625rem #dddfe2;
+}
+
+#prod1 {
+    position: relative;
+    background: url(media/prod1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+#prod2 {
+    background: url(media/prod2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+#prod3 {
+    background: url(media/prod3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* ..............Categories.......... */
+
+.categories {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: #e1e3f0;
+    background: linear-gradient(rgba(230, 230, 227, 0.993), rgba(145, 231, 133, 0.3)), url(media/categories.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.categories h1 {
+    margin-top: 1rem;
+    text-align: center;
+    font-family: "Charmonman";
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-decoration: underline double;
+}
+
+.cat-grid {
+    display: grid;
+    margin-top: 1.5rem;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+}
+
+.cat-child {
+    padding: 0.5rem 1rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.cat-child img {
+    width: 100%;
+    height: 65vh;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.cat-btn {
+    color: rgb(3, 3, 15);
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    background: rgba(220, 240, 215, 0.9);
+    cursor: pointer;
+    border-radius: 1rem;
+    font-family: "Charmonman";
+    text-transform: capitalize;
+    font-weight: 200;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.cat-btn:hover {
+    color: #f1f3f5;
+    background-color: rgb(3, 3, 15);
+}
+
+/* ..........Footer........ */
+
+footer h3 {
+    text-align: center;
+    font-family: "Stalemate";
+    font-size: 3rem;
+    background: #f1f3f5;
 }
