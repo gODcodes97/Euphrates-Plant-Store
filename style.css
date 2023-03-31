@@ -67,6 +67,10 @@
     background: rgb(3, 3, 15);
 }
 
+#menu-btn {
+    display: none;
+}
+
 /* .................About.................  */
 
 main .about {
@@ -123,7 +127,8 @@ main .about .about-div #shop-btn:hover {
 
 main .products {
     position: relative;
-    background: linear-gradient(rgba(145, 231, 133, 0.3), rgba(230, 230, 227, 0.993)), url(media/product.jpg);
+    /* background: linear-gradient(rgba(145, 231, 133, 0.3), rgba(230, 230, 227, 0.993)), url(media/product.jpg); */
+    background: #fff;
     width: 100%;
     background-position: center;
     background-size: contain;
