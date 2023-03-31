@@ -127,8 +127,7 @@ main .about .about-div #shop-btn:hover {
 
 main .products {
     position: relative;
-    /* background: linear-gradient(rgba(145, 231, 133, 0.3), rgba(230, 230, 227, 0.993)), url(media/product.jpg); */
-    background: #fff;
+    background: linear-gradient(rgba(145, 231, 133, 0.3), rgba(230, 230, 227, 0.993)), url(media/product.jpg);
     width: 100%;
     background-position: center;
     background-size: contain;
@@ -145,7 +144,7 @@ main .products #more-btn {
     font-family: "Charmonman";
     text-transform: capitalize;
     font-weight: 200;
-    /* box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2); */
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 main .products #more-btn:hover {
