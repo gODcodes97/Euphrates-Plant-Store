@@ -182,7 +182,7 @@ main .products .prod-grid {
 
 .prod-child img {
     width: 100%;
-    height: 65vh;
+    height: 50vh;
     background-size: cover;
     background-position: center;
     border: 1px solid transparent;
@@ -268,7 +268,7 @@ main .products .prod-grid {
 
 .cat-child img {
     width: 100%;
-    height: 65vh;
+    height: 50vh;
     background-size: cover;
     background-position: center;
     border: 1px solid transparent;
